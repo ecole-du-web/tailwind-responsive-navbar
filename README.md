@@ -1,4 +1,4 @@
-# Codez une navbar avec Tailwind !
+## Codez une navbar avec Tailwind !
 
 Code source de la vidéo youtube : [Lien vers la vidéo](https://www.youtube.com/watch?v=I6Xkg6UNxPo)
 
