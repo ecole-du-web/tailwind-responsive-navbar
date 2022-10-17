@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive navbar</title>
+    <link rel="stylesheet" href="dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top">
+
+    <header class="bg-white z-50 fixed top-0 w-full shadow">
+
+      <nav
+        id="main-nav"
+        class="bg-white max-w-5xl mx-auto font-poppins p-6 flex items-center justify-between"
+      >
+
+        <a 
+        href="top"
+        class="flex" 
+        aria-label="Page d'accueil du portfolio" 
+        >
+          <img
+            class="hidden md:w-7 md:inline md:mr-4"
+            src="images/logo.png"
+            alt=""
+          />
+ 
+          <span 
+          aria-hidden="true"
+          class="text-lg lg:text-xl">
+            Jane <strong>C<span class="text-rose-600">.</span></strong> </span
+          >
+        </a>
+
+        <button
+          aria-label="toggle button"
+          aria-expanded="false"
+          id="menu-btn"
+          class="cursor-pointer w-7 flex justify-between items-center md:hidden"
+        >
+          <img src="images/menu.svg" alt="" />
+        </button>
+        <ul
+          id="menu-toggle"
+          class="w-full absolute top-full left-0 -translate-y-full -z-10 text-gray-800 border-b border-gray-200 flex flex-col flex-nowrap items-center md:static md:z-10 md:w-min md:-translate-y-0 md:border-none md:flex-row"
+        >
+          <li class="py-4 md:py-0 md:mr-6">
+            <a
+              class="text-sm uppercase font-semibold w-full hover:bg-gray-light hover:text-rose-600 md:hover:bg-transparent"
+              href="#cv"
+              >CV</a
+            >
+          </li>
+          <li class="py-4 md:py-0 md:mr-6">
+            <a
+              class="text-sm uppercase font-semibold w-full hover:bg-gray-light hover:text-rose-600 md:hover:bg-transparent"
+              href="#competences"
+              >Compétences</a
+            >
+          </li>
+          <li class="py-4 md:py-0 md:mr-6">
+            <a
+              class="text-sm uppercase font-semibold w-full hover:bg-gray-light hover:text-rose-600 md:hover:bg-transparent"
+              href="#projets"
+              >Projets</a
+            >
+          </li>
+          <li class="py-4 md:py-0">
+            <a
+              class="text-sm uppercase font-semibold w-full hover:bg-gray-light hover:text-rose-600 md:hover:bg-transparent"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
